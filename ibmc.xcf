@@ -1,0 +1,108 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<!DOCTYPE		ispXCF	SYSTEM	"IspXCF.dtd" >
+<ispXCF version="3.7.0">
+	<Comment></Comment>
+	<Chain>
+		<Comm>JTAG</Comm>
+		<Device>
+			<SelectedProg value="TRUE"/>
+			<Pos>1</Pos>
+			<Vendor>Micron</Vendor>
+			<Family>LatticeECP3</Family>
+			<Name>LFE3-35EA</Name>
+			<Package>All</Package>
+			<Bypass>
+				<InstrLen>8</InstrLen>
+				<InstrVal>11111111</InstrVal>
+				<BScanLen>1</BScanLen>
+				<BScanVal>0</BScanVal>
+			</Bypass>
+			<File>{bit_file}</File>
+			<FileTime>{bit_file_time}</FileTime>
+			<JedecChecksum>N/A</JedecChecksum>
+			<Operation>SPI Flash Erase,Program,Verify</Operation>
+			<Option>
+				<SVFVendor>JTAG STANDARD</SVFVendor>
+				<SVFProcessor>SVF Processor</SVFProcessor>
+				<Usercode>0x00000000</Usercode>
+				<AccessMode>SPI Flash Background Programming</AccessMode>
+			</Option>
+			<FPGALoader>
+			<CPLDDevice>
+				<Device>
+					<Pos>1</Pos>
+					<Vendor>Lattice</Vendor>
+					<Family>LatticeECP3</Family>
+					<Name>LFE3-35EA</Name>
+					<IDCode>0x01012043</IDCode>
+					<Package>All</Package>
+					<PON>LFE3-35EA</PON>
+					<Bypass>
+						<InstrLen>8</InstrLen>
+						<InstrVal>11111111</InstrVal>
+						<BScanLen>1</BScanLen>
+						<BScanVal>0</BScanVal>
+					</Bypass>
+					<MaskFile>D:/lscc/diamond/3.8_x64/data/vmdata/database\xpga\ecp3\ecp3-35.msk</MaskFile>
+					<Operation>Verify ID</Operation>
+					<Option>
+						<SVFVendor>JTAG STANDARD</SVFVendor>
+						<IOState>HighZ</IOState>
+						<PreloadLength>675</PreloadLength>
+						<IOVectorData>0xFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF</IOVectorData>
+						<SVFProcessor>SVF Processor</SVFProcessor>
+						<AccessMode>JTAG</AccessMode>
+					</Option>
+				</Device>
+			</CPLDDevice>
+			<FlashDevice>
+				<Device>
+					<Pos>1</Pos>
+					<Vendor>Micron</Vendor>
+					<Family>SPI Serial Flash</Family>
+					<Name>SPI-M25P64</Name>
+					<IDCode>0x16</IDCode>
+					<Package>16-lead SOIC</Package>
+					<Operation>SPI Flash Erase,Program,Verify</Operation>
+					<File>{bit_file}</File>
+					<AddressBase>0x00000000</AddressBase>
+					<EndAddress>0x007F0000</EndAddress>
+					<DeviceSize>64</DeviceSize>
+					<DataSize>897764</DataSize>
+					<NumberOfDevices>1</NumberOfDevices>
+					<ReInitialize value="FALSE"/>
+				</Device>
+			</FlashDevice>
+			<FPGADevice>
+				<Device>
+					<Pos>1</Pos>
+					<Name></Name>
+					<File>{bit_file}</File>
+					<LocalChainList>
+						<LocalDevice index="-99"
+							name="Unknown"
+							file="{bit_file}"/>
+					</LocalChainList>
+					<Option>
+						<SVFVendor>JTAG STANDARD</SVFVendor>
+						<SVFProcessor>SVF Processor</SVFProcessor>
+					</Option>
+				</Device>
+			</FPGADevice>
+			</FPGALoader>
+		</Device>
+	</Chain>
+	<ProjectOptions>
+		<Program>SEQUENTIAL</Program>
+		<Process>ENTIRED CHAIN</Process>
+		<OperationOverride>No Override</OperationOverride>
+		<StartTAP>TLR</StartTAP>
+		<EndTAP>TLR</EndTAP>
+		<VerifyUsercode value="FALSE"/>
+		<TCKDelay>3</TCKDelay>
+	</ProjectOptions>
+	<CableOptions>
+		<CableName>USB2</CableName>
+		<PortAdd>{usb_port}</PortAdd>
+	</CableOptions>
+</ispXCF>
