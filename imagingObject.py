@@ -7,7 +7,6 @@ Created on Wed Jul 31 14:35:48 2018
 ''' 
 
 from DataProcess import *
-from TestPreload import *
 from DataObject import *
 from IxModuleHybridMCU import HybridMCU
 import numpy as np
